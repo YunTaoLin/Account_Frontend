@@ -5,7 +5,7 @@
 - 每月預算配置，自動計算平均每日可花費金額。
 - 以Line帳號作為第三方登入綁定，不需額外註冊。
 
-### 採用前端技術 (後端請[見此](https://github.com/YunTaoLin/Account_Backend) )
+### 前端技術架構 (後端請[見此](https://github.com/YunTaoLin/Account_Backend) )
 1. 前端框架：React 17.0.1 + Redux 4.0.5
 2. Progressive Web Apps功能支持
 3. UI方案：Material-UI庫 + styled-components

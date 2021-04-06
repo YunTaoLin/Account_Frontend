@@ -10,7 +10,7 @@
 2. Progressive Web Apps功能支持
 3. UI方案：Material-UI庫 + styled-components
 4. 其他熱門library：chart.js、monent.js、twix、swiper
-5. Line Login第三方登入配置。
+5. Line Login第三方登入。
 
 ### 網站入口(請用移動設備體驗)
 ![網站入口](https://i.imgur.com/oMwh8R4.png)

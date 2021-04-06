@@ -1,0 +1,8 @@
+
+*.js linguist-language=React
+*.scss linguist-language=scss
+assets/vendor/* linguist-vendored
+assets/images/* linguist-vendored=false
+docs/* linguist-documentation
+docs/formatter.rb linguist-documentation=false
+* text=auto

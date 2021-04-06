@@ -1,5 +1,5 @@
 
-*.js linguist-language=React
+*.js linguist-language=react
 *.scss linguist-language=scss
 assets/vendor/* linguist-vendored
 assets/images/* linguist-vendored=false

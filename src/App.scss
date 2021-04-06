@@ -1,0 +1,88 @@
+@import './scss/base.scss';
+body,html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  #root{
+    width: 100%;
+    height: 100%;
+  }
+}
+.mobile_container{
+  width: 100%;
+  position: relative;
+  .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    background-color: #f00;
+  }
+}
+.mainPage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn .7s forwards;
+  position: relative;
+  .header{
+    width: 100%;
+    height:64px;
+    background-color: #fff;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    .header_main{
+      width: 70%;
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba($color: #000000, $alpha: 0.5);
+      @include center;
+    }
+  }
+  .main{
+    flex-grow: 1;
+    height: calc(100% - 64px);
+    width: 100%;
+  }
+}
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+//內陰影
+@mixin shadow($Deg, $top:null,$bottom:null){
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top:  $top;
+    bottom:$bottom;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient($Deg,rgba(100,100,100,.1),rgba(0,0,0,0));
+    // filter: blur(1px)
+  }
+}
+
+//上方內陰影
+.shadow_t_inset{
+  @include shadow(180deg,0);
+}
+//下方內陰影
+.shadow_b_inset{
+  @include shadow(0deg,null,0);
+}
+//上方外陰影
+.shadow_t{
+  @include shadow(0deg,-6px);
+}
+//下方外陰影
+.shadow_b{
+  @include shadow(0deg,null,-6px);
+}

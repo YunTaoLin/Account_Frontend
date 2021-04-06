@@ -1,0 +1,19 @@
+@import "color";
+@import "unity";
+
+@mixin title {
+  color: $color_1;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin pie_chart {
+  // width: 68px;
+  // height: 68px;
+  // background-color: #faa;
+  // border-radius: 50%;
+}

@@ -1,0 +1,24 @@
+#Account{
+    .header_main .showTime{
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba($color: #000000, $alpha: 0.5);
+        .showTime_icon{
+            position: absolute;
+            right: -22px;
+            top: 50%;
+            transform: translateY(-45%);
+        }
+    }
+    .SwiperClass{
+        height: calc(100% - 80px);
+        padding-bottom: 80px;
+        > div{
+            // padding-bottom:300px;
+        }
+        .swiper-slide{
+            height: auto !important;
+        }
+    }
+}

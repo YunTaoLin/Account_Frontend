@@ -1,0 +1,54 @@
+@for $i from 1 through 20 {
+  .pt_#{$i} {
+    padding-top: (2 * $i) + px !important;
+  }
+  .pb_#{$i} {
+    padding-bottom: (2 * $i) + px !important;
+  }
+  .pl_#{$i} {
+    padding-left: (2 * $i) + px !important;
+  }
+  .pr_#{$i} {
+    padding-right: (2 * $i) + px !important;
+  }
+  .mt_#{$i} {
+    margin-top: (2 * $i) + px !important;
+  }
+  .mb_#{$i} {
+    margin-bottom: (2 * $i) + px !important;
+  }
+  .ml_#{$i} {
+    margin-left: (2 * $i) + px !important;
+  }
+  .mr_#{$i} {
+    margin-right: (2 * $i) + px !important;
+  }
+}
+.m_auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+//字體大小
+@for $i from 6 through 16 {
+  .fz_#{$i} {
+    font-size: (2 * $i) + px !important;
+  }
+}
+//字型
+$ff_1: "Noto Sans TC";
+$ff_2: "Josefin Sans";
+
+.ff_1 {
+  font-family: $ff_1 !important;
+}
+
+.ff_2 {
+  font-family: $ff_2 !important;
+}

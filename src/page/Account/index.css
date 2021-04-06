@@ -1,0 +1,24 @@
+#Account .header_main .showTime {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#Account .header_main .showTime .showTime_icon {
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
+
+#Account .SwiperClass {
+  height: calc(100% - 80px);
+  padding-bottom: 80px;
+}
+
+#Account .SwiperClass .swiper-slide {
+  height: auto !important;
+}
+/*# sourceMappingURL=index.css.map */

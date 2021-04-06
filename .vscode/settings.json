@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/2ec7ce1d-f201-4454-81b3-e37e84d5bf4c/resourceGroups/YunTaoLin-Web/providers/Microsoft.Web/sites/Account-web",
+    "appService.deploySubpath": "."
+}

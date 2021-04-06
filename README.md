@@ -14,3 +14,9 @@
 
 ## 網站入口(請用移動設備體驗)
 ![網站入口](https://i.imgur.com/oMwh8R4.png)
+
+
+## 部分網站截圖
+![1](https://i.imgur.com/idKG7vr.png)
+![2](https://i.imgur.com/VwyUr6s.png)
+![3](https://i.imgur.com/KTHbIcP.png)

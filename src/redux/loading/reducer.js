@@ -8,7 +8,6 @@ export default function loadingReducer(preState = init, action) {
     const { type, data } = action;
     switch (type) {
       case "update_loading":
-        console.log('有',data)
         preState.loading = data
         return {...preState};
       case "update_apiwait":

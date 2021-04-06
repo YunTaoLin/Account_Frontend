@@ -19,7 +19,6 @@ export default function TemporaryDrawer() {
   const [state, setState] = React.useState(false);
 
   const toggleDrawer = (open) => {
-    console.log(open);
     setState(open);
   };
   const logout = ()=>{

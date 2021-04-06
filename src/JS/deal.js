@@ -48,7 +48,6 @@ export default function getChartObj(filtedArray) {
     resObj.data.labels.push(item.classify)
     resObj.data.datasets[0].data.push(item.value)
   })
-  // console.log(resObj)
   return resObj
   
 }

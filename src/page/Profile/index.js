@@ -9,7 +9,6 @@ import cookie from 'react-cookies';
 require('twix');
 const Index = (props) => {
   let {memberData} = props.data
-  console.log(props)
   const getExperience = ()=>{
     let t = moment(memberData.creDate).twix(new Date());
     let days=t.count('days')

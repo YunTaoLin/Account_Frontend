@@ -1,7 +1,6 @@
 import "./App.scss";
 import React,{useEffect} from "react";
 import {  Route,Switch,Redirect ,useLocation } from "react-router-dom";
-// import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper.scss';
 import { connect } from "react-redux";
 import {getAccount} from './redux/account/action';
@@ -27,10 +26,6 @@ const useQuery=()=>{
   return new URLSearchParams(useLocation().search);
 }
 
-// setTimeout(()=>{
-//   props.Loading(false)
-//   console.log('關')
-// },2000)
 function APP(props) {
   let query = useQuery()
   useEffect(
@@ -49,11 +44,9 @@ function APP(props) {
             code: query.get('code'),
           };
           let passData = Qs.stringify(lineData);
-          console.log(passData)
           Line_LoginAuth(passData)
           .then(({ data }) => {
             LINE_DATA(data.access_token).then((LineData) => {
-              console.log(LineData)
               cookie.save('UID',LineData.data.userId,{path:"/"})
               cookie.save('name',LineData.data.displayName,{path:"/"})
               cookie.save('headimg',LineData.data.pictureUrl,{path:"/"})
@@ -106,7 +99,6 @@ function APP(props) {
       <Navbar></Navbar>
       <Loadging />
       {props.data.loadingStatus.apiwait && <ApiWait/>} 
-      {/* <div className="test" style={{height:window.innerHeight - 56 }}></div>  */}
     </div>
   );
 }
@@ -114,8 +106,8 @@ function APP(props) {
 export default connect (
   state => ({data: state }), 
   {
-    getAccount:getAccount,
-    getMember:getMember,
-    Loading:Loading
+    getAccount,
+    getMember,
+    Loading
   }
 )(APP);

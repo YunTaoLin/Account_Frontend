@@ -6,7 +6,6 @@ export default function accountReducer(preState = {}, action) {
       case "SET_Member":
         return {...data};
       case "UPDATE_Budget":
-        console.log('actoin的',data)
         preState.budget = data
         return {...preState};
       default:

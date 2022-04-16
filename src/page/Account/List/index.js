@@ -8,9 +8,8 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Add } from "@material-ui/icons";
 
-
 export default function index(props) {
-  const { list, total, selectedDate,budget,overage } = props;
+  const { list, total, selectedDate, budget, overage } = props;
   return (
     <div style={{ height: "100%" }}>
       <ListPage className="pl_8 pr_8 pt_6 ">
@@ -36,7 +35,9 @@ export default function index(props) {
             );
           })}
           {list.length === 0 ? (
-            <SwiperSlide style={{textAlign:'center'}}>這天還沒有任何紀錄喔！</SwiperSlide>
+            <SwiperSlide style={{ textAlign: "center" }}>
+              這天還沒有任何紀錄喔！
+            </SwiperSlide>
           ) : (
             ""
           )}
@@ -53,7 +54,11 @@ export default function index(props) {
           <Add />
         </Link>
       </ListPage>
-      <BudgetBar budget={budget} overage={overage} selectedDate={selectedDate}/>
+      <BudgetBar
+        budget={budget}
+        overage={overage}
+        selectedDate={selectedDate}
+      />
     </div>
   );
 }

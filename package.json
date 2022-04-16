@@ -16,6 +16,7 @@
     "date-fns": "^2.19.0",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
+    "prerender-spa-plugin": "^3.4.0",
     "qs": "^6.10.1",
     "react": "^17.0.1",
     "react-cookies": "^0.1.1",

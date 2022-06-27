@@ -12,7 +12,8 @@
 4. 其他熱門library：chart.js、monent.js、twix、swiper
 5. Line Login第三方登入。
 
-### 網站入口(請用移動設備體驗)
+### 網站入口(請用移動設備體驗)<br>
+(2022/06/27更新：因資料庫一年的免費權益到期，暫時先下架網站。想體驗者可自行clone專案)<br>
 ![網站入口](https://i.imgur.com/oMwh8R4.png)
 
 
